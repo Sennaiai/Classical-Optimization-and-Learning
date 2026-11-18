@@ -11,14 +11,25 @@ The work emphasizes machine learning as a modeling framework rather than a black
 
 ## Repository Structure
 
-**notebooks/**  
-Project notebooks organized by modeling task:
+**projects/**
+The currently checked-in notebooks are under `optimization/`:
 
-- `forecasting/` — time-series and predictive models  
-- `learning/` — supervised and unsupervised methods  
-- `optimization/` — regression, objective modeling, and tuning  
+- `optimization/` — three runnable optimization notebooks
 
-Each notebook is fully self-documented.
+Forecasting and learning projects are not present in this checkout yet.
+Add those directories when their project notebooks are ready to include.
+
+## Reproducibility and notebook checks
+
+Create the shared environment from the repository root:
+
+```bash
+conda env create -f environment.yml
+conda activate ml-projects
+python .github/scripts/execute_notebooks.py
+```
+
+GitHub Actions executes the offline optimization notebooks on pushes and pull requests. Notebooks that require local data or external services should only be added to automatic execution once those inputs are available safely.
 
 **resources/**  
 Supporting references and methodological notes.
