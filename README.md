@@ -12,13 +12,12 @@ The work emphasizes machine learning as a modeling framework rather than a black
 ## Repository Structure
 
 **projects/**
-Project notebooks organized by modeling task:
+The currently checked-in notebooks are under `optimization/`:
 
-- `forecasting/` — time-series and predictive models  
-- `learning/` — supervised and unsupervised methods  
-- `optimization/` — regression, objective modeling, and tuning  
+- `optimization/` — three runnable optimization notebooks
 
-Each notebook is fully self-documented.
+Forecasting and learning projects are not present in this checkout yet.
+Add those directories when their project notebooks are ready to include.
 
 ## Reproducibility and notebook checks
 
