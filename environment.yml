@@ -1,0 +1,15 @@
+name: ml-projects
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - ipykernel
+  - jupyterlab
+  - nbclient
+  - nbformat
+  - matplotlib
+  - numpy
+  - openpyxl
+  - pandas
+  - scikit-learn
+  - scipy
