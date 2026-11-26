@@ -2,16 +2,26 @@
 
 Senay Kahsay · Scientific computing and reproducible numerical studies
 
-Four focused studies connect optimization and statistical estimation with independent references, explicit computational budgets and saved results.
+## Reusable learning models
 
-| Study | Implementation and evidence |
+| Models | Standalone implementation | Connection |
+|---|---|---|
+| Ridge, random forest, gradient boosting | [Forecasting models](src/classical_studies/baselines/forecasting/models.py) and [training/prediction API](src/classical_studies/baselines/forecasting/api.py) | Classical controls for electricity-grid quantum-reservoir benchmarking. |
+| Echo-state reservoir with ridge readout | [Reservoir features](src/classical_studies/baselines/forecasting/echo.py) | Classical reservoir and hybrid forecasting controls. |
+| Logistic classification: full or selected molecular counts | [Molecular learning API](src/classical_studies/baselines/molecular.py) | Classical ADMET controls, scaffold-separated evaluation and portable JSON inference. |
+
+These Python modules run independently of quantum backends. [Learning guide](projects/learning/) · [Library usage and provenance](src/classical_studies/baselines/)
+
+## Numerical studies and optimization
+
+| Study | Scientific focus |
 |---|---|
-| [Nonconvex optimization](projects/optimization/nonconvex/) | Armijo gradient descent and BFGS; analytic derivatives, certified minima and SciPy comparisons. |
-| [Multiobjective unit commitment](projects/optimization/unit_commitment/) | MOPSO and classical QPSO; feasible schedules, equal candidate budgets and an analytic/MILP Pareto reference. |
-| [Fuzzy resource allocation](projects/optimization/fuzzy_allocation/) | Robust alpha-cut linear programs; HiGHS checked against independent vertex enumeration. |
-| [Monte Carlo option pricing](projects/learning/monte_carlo_estimation/) | Monte Carlo, antithetic sampling and scrambled Sobol/Halton; matched budgets and Black–Scholes references. |
+| [Nonconvex optimization](projects/optimization/nonconvex/) | Armijo descent and BFGS; analytic derivatives, certified minima and SciPy references. |
+| [Multiobjective unit commitment](projects/optimization/unit_commitment/) | MOPSO/QPSO; feasible schedules, matched budgets and an analytic/MILP Pareto reference. |
+| [Fuzzy resource allocation](projects/optimization/fuzzy_allocation/) | Robust alpha-cut LPs checked against independent vertex enumeration. |
+| [Monte Carlo option pricing](projects/learning/monte_carlo_estimation/) | Monte Carlo, antithetic sampling and scrambled Sobol/Halton against Black–Scholes. |
 
-[Standalone classical models](src/classical_studies/baselines/) provide forecasting, molecular logistic classification and QUBO/Ising allocation APIs extracted from the [quantum studies](https://github.com/Sennaiai/Quantum-Computing). They run independently of quantum backends. The finance study is numerical estimation; predictive learning lives in these reusable modules.
+The [standalone allocation solver](src/classical_studies/baselines/allocation/) supplies classical QUBO/Ising annealing and audited refinement. [Optimization guide](projects/optimization/)
 
 ## Reproduce
 
@@ -25,4 +35,4 @@ python -m unittest discover -s tests -v
 python .github/scripts/execute_notebooks.py --study all
 ```
 
-Notebooks contain executed summaries; each study links its numerical evidence and limitations. CI tests and executes only affected study groups. These bounded demonstrations establish implementation behavior within their stated models.
+Executed notebooks retain summaries, numerical evidence and limitations. CI tests only affected study groups. Monte Carlo is numerical estimation; predictive models live in the reusable library. Molecular component tests do not establish ADMET predictive accuracy.
