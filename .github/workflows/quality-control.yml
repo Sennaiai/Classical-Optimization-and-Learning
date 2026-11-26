@@ -1,4 +1,4 @@
-name: Notebook structure checks
+name: Classical scientific checks
 
 on:
   pull_request:
@@ -9,22 +9,72 @@ on:
 permissions:
   contents: read
 
-jobs:
-  notebooks:
-    uses: Sennaiai/Quality-Control-/.github/workflows/notebook-ci.yml@f39e3a601fac9890ef214b58ad02794745f2e54f
+concurrency:
+  group: classical-${{ github.ref }}
+  cancel-in-progress: true
 
-  execute-notebooks:
+jobs:
+  structure-and-scope:
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.scope.outputs.matrix }}
+      has_work: ${{ steps.scope.outputs.has_work }}
     steps:
-      - name: Check out repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.11'
+      - name: Check structure and workflow routing
+        run: |
+          python .github/scripts/check_structure.py
+          python -m unittest discover -s tests -p test_workflow_scope.py -v
+          python -m unittest discover -s tests -p test_notebook_contract.py -v
+      - name: Select affected experiments
+        id: scope
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = workflow_dispatch ]; then
+            python .github/scripts/select_studies.py --manual
+          else
+            python .github/scripts/select_studies.py
+          fi
+  scientific:
+    needs: structure-and-scope
+    if: needs.structure-and-scope.outputs.has_work == 'true'
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.structure-and-scope.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Set up notebook environment
-        uses: mamba-org/setup-micromamba@v2
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
-          environment-file: environment.yml
-          cache-environment: true
-      - name: Execute offline notebooks
-        shell: bash -el {0}
-        run: python .github/scripts/execute_notebooks.py
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install declared dependencies
+        run: python -m pip install -e '.[learning,allocation,notebooks]'
+      - name: Test and execute selected study
+        env:
+          MPLCONFIGDIR: ${{ runner.temp }}/classical-mpl
+        run: python .github/scripts/run_checks.py '${{ matrix.study }}'
+      - name: Save scientific evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: classical-${{ matrix.study }}
+          path: artifacts/${{ matrix.study }}/
+          if-no-files-found: error

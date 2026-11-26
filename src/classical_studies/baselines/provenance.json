@@ -1,0 +1,173 @@
+{
+  "source_repository_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+  "files": [
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/data_contract.py",
+      "source_sha256": "e829fe0781206d138e09e26e64e111635a8c2a0017dafadce46199a84dcd7a99",
+      "destination": "allocation/data_contract.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/qubo.py",
+      "source_sha256": "ff075ac711759c0f86ecdfbfc3416922a5b43b4e30915f27ef6b80ac2f3d7dae",
+      "destination": "allocation/qubo.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/solver.py",
+      "source_sha256": "0a7b8b4cefb9b396b836f438dd7a126dba8252f5872897c408f566d8cff8a0f2",
+      "destination": "allocation/solver.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/allocation_refinement.py",
+      "source_sha256": "21778be18d5c5e91579b208b91c70808ce71a9b09be134cd93efb6ba55e07277",
+      "destination": "allocation/allocation_refinement.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/capacity_bounds.py",
+      "source_sha256": "84c1aa852a282a14307bbc71ce08f1de95fe45fa4a8132d49879f3bd48c7c27f",
+      "destination": "allocation/capacity_bounds.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/connections.py",
+      "source_sha256": "62b4b2f06fdb093eafebf9ce7c06643e40e2e5125d52b7566a70c8912575fa3f",
+      "destination": "allocation/connections.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/connection_curation.py",
+      "source_sha256": "5a996f213aaea96f55d85f604717eed61831b4bc741e8dd330b9310464ce02c2",
+      "destination": "allocation/connection_curation.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/fixtures.py",
+      "source_sha256": "2fce5d380f8f4ab92d415cee89819ad01717cd00f3b09b07b4d831c410aaf4b1",
+      "destination": "allocation/fixtures.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/experiment.py",
+      "source_sha256": "9be59d1cf40da3cd9cf2a55b5ea90376a57a1e9591afd002133344c47e83d2f6",
+      "destination": "allocation/experiment.py",
+      "adaptation": "Package-relative imports only; numerical model and solver logic unchanged."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/config.json",
+      "source_sha256": "7cc0ca9afa4e5e652359b9d4bd2b64451218e1853b38c50c6da9ad75fdfdf605",
+      "destination": "allocation/config.json",
+      "adaptation": "Unchanged public benchmark configuration."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/data/provenance.json",
+      "source_sha256": "3e8501c1f2797f042cb4232170a998ab4ab20aa4c0388dc9c31d9d4fff140a10",
+      "destination": "allocation/data/provenance.json",
+      "adaptation": "Unchanged de-identified public catalog or reference data."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/data/capacity_bounds.json",
+      "source_sha256": "1d61a8744e98d98981eccea47801bb13625abb39c27b41dc1bfd2da35d6a20dd",
+      "destination": "allocation/data/capacity_bounds.json",
+      "adaptation": "Unchanged de-identified public catalog or reference data."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/data/expanded_capacity_bounds.json",
+      "source_sha256": "8fb2b11eee39b4d65babb9fc339729e8e66db2b4769df53a7b85099fa703451a",
+      "destination": "allocation/data/expanded_capacity_bounds.json",
+      "adaptation": "Unchanged de-identified public catalog or reference data."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/data/irops_catalog.json.gz",
+      "source_sha256": "470dcb9c0520dd4683fc93b94ff0c2f89ea81af4881ccb30c82d83226b12e6c1",
+      "destination": "allocation/data/irops_catalog.json.gz",
+      "adaptation": "Unchanged de-identified public catalog or reference data."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/QUBO IROPS solver/data/connection_network.json.gz",
+      "source_sha256": "4bcbc668f789be18959487988829409a4cdbc29952e4911786a5b2f81526e5d6",
+      "destination": "allocation/data/connection_network.json.gz",
+      "adaptation": "Unchanged de-identified public catalog or reference data."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/Grid Load QRC Benchmarks/data_contract.py",
+      "source_sha256": "51e7842528bc57e82cdc7339b243c2827523293df59296de8da6b4f0613f8026",
+      "destination": "forecasting/data_contract.py",
+      "adaptation": "Unchanged causal data preparation and train-only encoder scaling."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/Grid Load QRC Benchmarks/benchmark.py",
+      "source_sha256": "ce4da0d2d3859670f4c75e42db13c7e5ef15c3183a59e5536c45f844dc798567",
+      "destination": "forecasting/models.py",
+      "adaptation": "Selected classical-only functions and hyperparameter grids copied; no quantum reservoir imports. Additional metric guards reject empty/non-finite evidence."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/Grid Load QRC Benchmarks/reservoirs.py",
+      "source_sha256": "787db3fc8534e91ca69c97a2fc1b27c3015dac01bbe8120206e0609fb744f512",
+      "destination": "forecasting/echo.py",
+      "adaptation": "Only the classical echo-state feature map and its input validator."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/Grid Load QRC Benchmarks/data/provenance.json",
+      "source_sha256": "4d3fb41eef8bac1150e6e38ffd642d85f9391213bdfd6e78c20055430d5fe51e",
+      "destination": "forecasting/data/provenance.json",
+      "adaptation": "Unchanged NESO public data and attribution/checksum metadata."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/Grid Load QRC Benchmarks/data/neso_2025_jan_oct.csv",
+      "source_sha256": "b1eec366de4a0062e4b3a4bafcb6b9c38ef25e9b57ec354969077a05310c6df4",
+      "destination": "forecasting/data/neso_2025_jan_oct.csv",
+      "adaptation": "Unchanged NESO public data and attribution/checksum metadata."
+    },
+    {
+      "source_repository": "https://github.com/Sennaiai/Quantum-Computing",
+      "source_commit": "0d46844512561078eac5d6a391d8c3a7d0a8187a",
+      "source_path": "projects/Quantum Molecular Learning for ADMET/src/post_api_ml.py",
+      "source_sha256": "729e744820898b6c03998e2f0a6ae117231549d0e74c4ce89ae255aa29efe6e0",
+      "destination": "molecular.py",
+      "adaptation": "Classical logistic fit, metrics, portable arithmetic and validators extracted. Transport/correlation/API functions removed; metadata renamed from encoding to preprocessing; explicit matrix and scaffold-partition adapter added. Solver, regularization selection and numerical probability formulas retained."
+    }
+  ]
+}

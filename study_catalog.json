@@ -1,0 +1,18 @@
+{
+  "nonconvex": {
+    "notebook": "projects/optimization/nonconvex/Nonconvex_Optimization.ipynb",
+    "tests": "test_nonconvex.py"
+  },
+  "unit_commitment": {
+    "notebook": "projects/optimization/unit_commitment/Multiobjective_Unit_Commitment.ipynb",
+    "tests": "test_unit_commitment.py"
+  },
+  "fuzzy": {
+    "notebook": "projects/optimization/fuzzy_allocation/Fuzzy_Resource_Allocation.ipynb",
+    "tests": "test_fuzzy.py"
+  },
+  "option_pricing": {
+    "notebook": "projects/learning/monte_carlo_estimation/Monte_Carlo_Option_Pricing.ipynb",
+    "tests": "test_option_pricing.py"
+  }
+}

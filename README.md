@@ -1,45 +1,28 @@
-# Machine Learning Portfolio
+# Classical Optimization and Learning
 
-Sennai Kahssai  
-Machine Learning · Scientific Computing · Applied Modeling
+Senay Kahsay · Scientific computing and reproducible numerical studies
 
-## Overview
+Four focused studies connect optimization and statistical estimation with independent references, explicit computational budgets and saved results.
 
-This repository contains my applied machine learning portfolio, focused on building rigorous, reproducible models for quantitative and scientific problem-solving.
+| Study | Implementation and evidence |
+|---|---|
+| [Nonconvex optimization](projects/optimization/nonconvex/) | Armijo gradient descent and BFGS; analytic derivatives, certified minima and SciPy comparisons. |
+| [Multiobjective unit commitment](projects/optimization/unit_commitment/) | MOPSO and classical QPSO; feasible schedules, equal candidate budgets and an analytic/MILP Pareto reference. |
+| [Fuzzy resource allocation](projects/optimization/fuzzy_allocation/) | Robust alpha-cut linear programs; HiGHS checked against independent vertex enumeration. |
+| [Monte Carlo option pricing](projects/learning/monte_carlo_estimation/) | Monte Carlo, antithetic sampling and scrambled Sobol/Halton; matched budgets and Black–Scholes references. |
 
-The work emphasizes machine learning as a modeling framework rather than a black box, integrating statistical foundations, clean data pipelines, and principled evaluation into end-to-end analytical workflows.
+[Standalone classical models](src/classical_studies/baselines/) provide forecasting, molecular logistic classification and QUBO/Ising allocation APIs extracted from the [quantum studies](https://github.com/Sennaiai/Quantum-Computing). They run independently of quantum backends. The finance study is numerical estimation; predictive learning lives in these reusable modules.
 
-## Repository Structure
+## Reproduce
 
-**projects/**
-The currently checked-in notebooks are under `optimization/`:
-
-- `optimization/` — three runnable optimization notebooks
-
-Forecasting and learning projects are not present in this checkout yet.
-Add those directories when their project notebooks are ready to include.
-
-## Reproducibility and notebook checks
-
-Create the shared environment from the repository root:
+Use Python 3.11 from the repository root:
 
 ```bash
-conda env create -f environment.yml
-conda activate ml-projects
-python .github/scripts/execute_notebooks.py
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[learning,allocation,notebooks]'
+python -m unittest discover -s tests -v
+python .github/scripts/execute_notebooks.py --study all
 ```
 
-GitHub Actions executes the offline optimization notebooks on pushes and pull requests. Notebooks that require local data or external services should only be added to automatic execution once those inputs are available safely.
-
-**resources/**  
-Supporting references and methodological notes.
-
-## Orientation
-
-The focus is on interpretable, well-validated models designed for real-world analytical and scientific applications.
----
-## Connect With Me
-- [LinkedIn](https://www.linkedin.com/in/senay-kahsay)
-- [Medium](https://medium.com/@kahssai.sen)
-
-> “We are the music while the music lasts.” — *T. S. Eliot*
+Notebooks contain executed summaries; each study links its numerical evidence and limitations. CI tests and executes only affected study groups. These bounded demonstrations establish implementation behavior within their stated models.
