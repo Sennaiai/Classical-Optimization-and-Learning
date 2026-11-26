@@ -1,0 +1,33 @@
+{
+  "consolidation": "Seven supplied notebooks consolidated into four studies; input file hashes identify the reviewed starting files.",
+  "inputs": [
+    {
+      "path": "projects/optimization/Fundamentals_of_Optimization_1_Rosenbrock_function_(Classical_).ipynb",
+      "sha256": "7f5e7136ada65809a3ff181567e870912f0c2537901c1d21e0ce010ba2b0b09f"
+    },
+    {
+      "path": "projects/optimization/Fundamentals_of_Optimization_Himmelblau's_Function_(Classical).ipynb",
+      "sha256": "ef1dae844cf65dbd727531e205af2e7ef190d6c4b8a48f623e91ccd50bc32715"
+    },
+    {
+      "path": "projects/optimization/Unit_Commitment_MOPSO.ipynb",
+      "sha256": "348b6d91725f251995c2397b0f26092ba60f376986e71178761ae38b7e1adf4e"
+    },
+    {
+      "path": "projects/optimization/unit_commitment_qpso_quantum_inspired.ipynb",
+      "sha256": "81e17a938a9f545fa5f9e351d979873c06d70b282cda85251cff7221f0ead006"
+    },
+    {
+      "path": "projects/(10) Finance (Part 2).ipynb",
+      "sha256": "9e7f08d2afe62e6625fe32a5614ca70a4a01494f5103691b4b18f52494c6c77a"
+    },
+    {
+      "path": "projects/(8) Carbon Dioxide Storage (Part 2).ipynb",
+      "sha256": "85d419fce2e99502b90c1963f16150b00a7e9e62b5826c36d2f9528c1dfc05f2"
+    },
+    {
+      "path": "projects/(Solution) (9) Finance (Part 1).ipynb",
+      "sha256": "7c4960846f71ec9e805de5ea67a86bc3d394b8eec7e2c54fc23a00f8d3552fbc"
+    }
+  ]
+}

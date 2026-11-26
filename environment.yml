@@ -1,15 +1,8 @@
-name: ml-projects
+name: classical-studies
 channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - ipykernel
-  - jupyterlab
-  - nbclient
-  - nbformat
-  - matplotlib
-  - numpy
-  - openpyxl
-  - pandas
-  - scikit-learn
-  - scipy
+  - pip
+  - pip:
+      - -e .[learning,allocation,notebooks]

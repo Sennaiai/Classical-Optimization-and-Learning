@@ -1,0 +1,888 @@
+{
+  "case": "Synthetic two-product resource allocation; no carbon-storage model",
+  "interpretation": "Robust policy optimizes worst-case profit over each alpha-cut box; alpha is a membership level, not a confidence or probability.",
+  "records": [
+    {
+      "alpha": 0.0,
+      "policy": "legacy",
+      "production": [
+        14.5,
+        9.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        38.0,
+        28.0
+      ],
+      "profit": 99.5,
+      "reference_profit": 99.5,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0008824588730931282
+    },
+    {
+      "alpha": 0.125,
+      "policy": "legacy",
+      "production": [
+        14.5625,
+        9.125
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        38.25,
+        28.25
+      ],
+      "profit": 100.1875,
+      "reference_profit": 100.1875,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0005927910096943378
+    },
+    {
+      "alpha": 0.25,
+      "policy": "legacy",
+      "production": [
+        14.625,
+        9.25
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        38.5,
+        28.5
+      ],
+      "profit": 100.875,
+      "reference_profit": 100.875,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0006155830342322588
+    },
+    {
+      "alpha": 0.375,
+      "policy": "legacy",
+      "production": [
+        14.6875,
+        9.375
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        38.75,
+        28.75
+      ],
+      "profit": 101.5625,
+      "reference_profit": 101.5625,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0005080411210656166
+    },
+    {
+      "alpha": 0.5,
+      "policy": "legacy",
+      "production": [
+        14.75,
+        9.5
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        39.0,
+        29.0
+      ],
+      "profit": 102.25,
+      "reference_profit": 102.25,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0004569580778479576
+    },
+    {
+      "alpha": 0.625,
+      "policy": "legacy",
+      "production": [
+        14.8125,
+        9.625
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        39.25,
+        29.25
+      ],
+      "profit": 102.9375,
+      "reference_profit": 102.9375,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00042408285662531853
+    },
+    {
+      "alpha": 0.75,
+      "policy": "legacy",
+      "production": [
+        14.875,
+        9.75
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        39.5,
+        29.5
+      ],
+      "profit": 103.625,
+      "reference_profit": 103.625,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0004420410841703415
+    },
+    {
+      "alpha": 0.875,
+      "policy": "legacy",
+      "production": [
+        14.9375,
+        9.875
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        39.75,
+        29.75
+      ],
+      "profit": 104.3125,
+      "reference_profit": 104.3125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0004662091378122568
+    },
+    {
+      "alpha": 1.0,
+      "policy": "legacy",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00043283402919769287
+    },
+    {
+      "alpha": 0.0,
+      "policy": "robust",
+      "production": [
+        14.5,
+        9.0
+      ],
+      "profits_per_unit": [
+        4.5,
+        2.8
+      ],
+      "resource_limits": [
+        38.0,
+        28.0
+      ],
+      "profit": 90.45,
+      "reference_profit": 90.45,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0004217920359224081
+    },
+    {
+      "alpha": 0.125,
+      "policy": "robust",
+      "production": [
+        14.5625,
+        9.125
+      ],
+      "profits_per_unit": [
+        4.5625,
+        2.8249999999999997
+      ],
+      "resource_limits": [
+        38.25,
+        28.25
+      ],
+      "profit": 92.21953125,
+      "reference_profit": 92.21953125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00040866690687835217
+    },
+    {
+      "alpha": 0.25,
+      "policy": "robust",
+      "production": [
+        14.625,
+        9.25
+      ],
+      "profits_per_unit": [
+        4.625,
+        2.8499999999999996
+      ],
+      "resource_limits": [
+        38.5,
+        28.5
+      ],
+      "profit": 94.003125,
+      "reference_profit": 94.003125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00040366617031395435
+    },
+    {
+      "alpha": 0.375,
+      "policy": "robust",
+      "production": [
+        14.6875,
+        9.375
+      ],
+      "profits_per_unit": [
+        4.6875,
+        2.875
+      ],
+      "resource_limits": [
+        38.75,
+        28.75
+      ],
+      "profit": 95.80078125,
+      "reference_profit": 95.80078125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00040054204873740673
+    },
+    {
+      "alpha": 0.5,
+      "policy": "robust",
+      "production": [
+        14.75,
+        9.5
+      ],
+      "profits_per_unit": [
+        4.75,
+        2.9
+      ],
+      "resource_limits": [
+        39.0,
+        29.0
+      ],
+      "profit": 97.6125,
+      "reference_profit": 97.6125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003813339862972498
+    },
+    {
+      "alpha": 0.625,
+      "policy": "robust",
+      "production": [
+        14.8125,
+        9.625
+      ],
+      "profits_per_unit": [
+        4.8125,
+        2.925
+      ],
+      "resource_limits": [
+        39.25,
+        29.25
+      ],
+      "profit": 99.43828125,
+      "reference_profit": 99.43828125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00037812511436641216
+    },
+    {
+      "alpha": 0.75,
+      "policy": "robust",
+      "production": [
+        14.875,
+        9.75
+      ],
+      "profits_per_unit": [
+        4.875,
+        2.95
+      ],
+      "resource_limits": [
+        39.5,
+        29.5
+      ],
+      "profit": 101.278125,
+      "reference_profit": 101.278125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003754161298274994
+    },
+    {
+      "alpha": 0.875,
+      "policy": "robust",
+      "production": [
+        14.9375,
+        9.875
+      ],
+      "profits_per_unit": [
+        4.9375,
+        2.975
+      ],
+      "resource_limits": [
+        39.75,
+        29.75
+      ],
+      "profit": 103.13203125,
+      "reference_profit": 103.13203125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003742920234799385
+    },
+    {
+      "alpha": 1.0,
+      "policy": "robust",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003723332192748785
+    },
+    {
+      "alpha": 0.0,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00037654093466699123
+    },
+    {
+      "alpha": 0.125,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00037120794877409935
+    },
+    {
+      "alpha": 0.25,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00036991690285503864
+    },
+    {
+      "alpha": 0.375,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00037420797161757946
+    },
+    {
+      "alpha": 0.5,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003654998727142811
+    },
+    {
+      "alpha": 0.625,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003672919701784849
+    },
+    {
+      "alpha": 0.75,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003667918499559164
+    },
+    {
+      "alpha": 0.875,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00037370785139501095
+    },
+    {
+      "alpha": 1.0,
+      "policy": "nominal",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003730419557541609
+    },
+    {
+      "alpha": 0.0,
+      "policy": "optimistic",
+      "production": [
+        15.5,
+        11.0
+      ],
+      "profits_per_unit": [
+        5.5,
+        3.2
+      ],
+      "resource_limits": [
+        42.0,
+        32.0
+      ],
+      "profit": 120.45,
+      "reference_profit": 120.45,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00038120802491903305
+    },
+    {
+      "alpha": 0.125,
+      "policy": "optimistic",
+      "production": [
+        15.4375,
+        10.875
+      ],
+      "profits_per_unit": [
+        5.4375,
+        3.1750000000000003
+      ],
+      "resource_limits": [
+        41.75,
+        31.75
+      ],
+      "profit": 118.46953125,
+      "reference_profit": 118.46953125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003721248358488083
+    },
+    {
+      "alpha": 0.25,
+      "policy": "optimistic",
+      "production": [
+        15.375,
+        10.75
+      ],
+      "profits_per_unit": [
+        5.375,
+        3.1500000000000004
+      ],
+      "resource_limits": [
+        41.5,
+        31.5
+      ],
+      "profit": 116.50312500000001,
+      "reference_profit": 116.50312500000001,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003758328966796398
+    },
+    {
+      "alpha": 0.375,
+      "policy": "optimistic",
+      "production": [
+        15.3125,
+        10.625
+      ],
+      "profits_per_unit": [
+        5.3125,
+        3.125
+      ],
+      "resource_limits": [
+        41.25,
+        31.25
+      ],
+      "profit": 114.55078125,
+      "reference_profit": 114.55078125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00036762491799890995
+    },
+    {
+      "alpha": 0.5,
+      "policy": "optimistic",
+      "production": [
+        15.25,
+        10.5
+      ],
+      "profits_per_unit": [
+        5.25,
+        3.1
+      ],
+      "resource_limits": [
+        41.0,
+        31.0
+      ],
+      "profit": 112.61250000000001,
+      "reference_profit": 112.61250000000001,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003744999412447214
+    },
+    {
+      "alpha": 0.625,
+      "policy": "optimistic",
+      "production": [
+        15.1875,
+        10.375
+      ],
+      "profits_per_unit": [
+        5.1875,
+        3.075
+      ],
+      "resource_limits": [
+        40.75,
+        30.75
+      ],
+      "profit": 110.68828125,
+      "reference_profit": 110.68828125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00036712479777634144
+    },
+    {
+      "alpha": 0.75,
+      "policy": "optimistic",
+      "production": [
+        15.125,
+        10.25
+      ],
+      "profits_per_unit": [
+        5.125,
+        3.05
+      ],
+      "resource_limits": [
+        40.5,
+        30.5
+      ],
+      "profit": 108.778125,
+      "reference_profit": 108.778125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.00036983401514589787
+    },
+    {
+      "alpha": 0.875,
+      "policy": "optimistic",
+      "production": [
+        15.0625,
+        10.125
+      ],
+      "profits_per_unit": [
+        5.0625,
+        3.025
+      ],
+      "resource_limits": [
+        40.25,
+        30.25
+      ],
+      "profit": 106.88203125,
+      "reference_profit": 106.88203125,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003661250229924917
+    },
+    {
+      "alpha": 1.0,
+      "policy": "optimistic",
+      "production": [
+        15.0,
+        10.0
+      ],
+      "profits_per_unit": [
+        5.0,
+        3.0
+      ],
+      "resource_limits": [
+        40.0,
+        30.0
+      ],
+      "profit": 105.0,
+      "reference_profit": 105.0,
+      "resource_slack": [
+        0.0,
+        0.0
+      ],
+      "reference_absolute_error": 0.0,
+      "solve_seconds": 0.0003654579631984234
+    }
+  ],
+  "total_study_seconds": 0.01935195899568498,
+  "provenance": {
+    "python": "3.11.18",
+    "packages": {
+      "numpy": "2.3.4",
+      "scipy": "1.16.3",
+      "matplotlib": "3.10.7"
+    },
+    "source_sha256": {
+      "fuzzy.py": "076f53b9fd5a385ae858b09e5d8805e8e837dea1e7967b329c943408da342f84",
+      "run.py": "adb91f7cc6bfad8d1d28c986153693f7a1768c08890772314fc4eca52f24ad15"
+    },
+    "thread_settings": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  }
+}
